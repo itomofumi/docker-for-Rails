@@ -1,12 +1,14 @@
 # Doker-for-Rails
 ## 概要
 windows10 HOMEでのrails環境構築
+
 サクッと作る用
 
 ## 手順
 ### 0. 下準備
 Windows10 Homeの場合
 DockerToolBoxをダウンロードしてインストール
+
 `https://www.docker.com/get-docker`
 
 ### 1. ファイル生成
@@ -47,13 +49,16 @@ development:
 
 ### 6. MySQLのインスタンスを作成
 Rails上にMySQLのインスタンスを作成
+
 `docker-compose run web bundle exec rake db:create`
 
 ### 7. IPを確認してブラウザにアクセス
 下記コマンドでdockerマシンのＩＰを確認
+
 `docker-machine ip`
 
 ブラウザを起動して確認したＩＰでアクセス
+
 `http://192.168.99.100:3000`
 
 アクセスして`Yay! You’re on Rails!`が表示できれば完了です
