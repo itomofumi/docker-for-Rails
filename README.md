@@ -15,17 +15,17 @@ DockerToolBoxをダウンロードしてインストール
 - docker-compose.yml
 - Dockerfile
 - Gemfile
-- Gemfile.loc
+- Gemfile.lock
 
 をそれぞれ作成する
 
 ### 2. アプリを生成
 rails newでアプリを生成
 
-`docker-compose run web rails new . --force --database=mysql`
+`$ docker-compose run web rails new . --force --database=mysql`
 
 ### 3. build
-`docker-compose build`
+`$ docker-compose build`
 
 ### 4. config/database.yml を補正
 アプリが生成されたら、config/database.ymlの`password` と `host`をdocker-compose.ymlの設定と合わせる
@@ -45,17 +45,17 @@ development:
 ```
 
 ### 5. コンテナＵＰ
-`docker-compose up -d`
+`$ docker-compose up -d`
 
 ### 6. MySQLのインスタンスを作成
 Rails上にMySQLのインスタンスを作成
 
-`docker-compose run web bundle exec rake db:create`
+`$ docker-compose run web bundle exec rake db:create`
 
 ### 7. IPを確認してブラウザにアクセス
 下記コマンドでdockerマシンのＩＰを確認
 
-`docker-machine ip` 192.168.99.100:3000
+`$ docker-machine ip` 192.168.99.100:3000
 
 ブラウザを起動して確認したＩＰでアクセス
 
