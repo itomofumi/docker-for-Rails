@@ -55,7 +55,7 @@ Rails上にMySQLのインスタンスを作成
 ### 7. IPを確認してブラウザにアクセス
 下記コマンドでdockerマシンのＩＰを確認
 
-`docker-machine ip`
+`docker-machine ip` 192.168.99.100:3000
 
 ブラウザを起動して確認したＩＰでアクセス
 
