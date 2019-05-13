@@ -9,7 +9,7 @@ windows10 HOMEでのrails環境構築
 Windows10 Homeの場合
 DockerToolBoxをダウンロードしてインストール
 
-`https://www.docker.com/get-docker`
+`https://docs.docker.com/toolbox/overview/`
 
 ### 1. ファイル生成
 - docker-compose.yml
